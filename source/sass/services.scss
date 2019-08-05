@@ -1,0 +1,151 @@
+.services {
+  background-image: url("../img/bg-services.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  padding-bottom: 30px;
+}
+
+.services__list {
+  @include listReset;
+  padding-top: 40px;
+  // display: grid;
+  // grid-template-columns: 1fr 1fr 1fr 1fr;
+  // grid-template-rows: 1fr 1fr 1fr;
+  // grid-template-areas: ". . . ." ". . . ." ". . . .";
+}
+
+.services__item {
+  margin-bottom: 20px;
+  padding-top: 125px;
+  padding-bottom: 50px;
+  transition: all, 0.2s;
+  cursor: pointer;
+  position: relative;
+
+  &:hover {
+    transition: all, 0.2s;
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 71px;
+    height: 38px;
+    background-image: url("../img/icon-services-item.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    top: 48px;
+    right: 80px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 62px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    top: 35px;
+    left: 24px;
+  }
+
+  &:nth-child(1) {
+    &::after {
+      background-image: url("../img/serives-1-maternity.svg");
+    }
+  }
+
+  &:nth-child(2) {
+    &::after {
+      background-image: url("../img/serives-2.svg");
+    }
+  }
+
+  &:nth-child(3) {
+    &::after {
+      background-image: url("../img/serives-3.svg");
+    }
+  }
+
+  &:nth-child(4) {
+    &::after {
+      background-image: url("../img/serives-4.svg");
+    }
+  }
+
+  &:nth-child(5) {
+    &::after {
+      background-image: url("../img/serives-5.svg");
+    }
+  }
+
+  &:nth-child(6) {
+    &::after {
+      background-image: url("../img/serives-6.svg");
+    }
+  }
+
+  &:nth-child(7) {
+    &::after {
+      background-image: url("../img/serives-7.svg");
+    }
+  }
+
+  &:nth-child(8) {
+    &::after {
+      background-image: url("../img/serives-8.svg");
+    }
+  }
+
+  &:nth-child(9) {
+    &::after {
+      background-image: url("../img/serives-9.svg");
+    }
+  }
+
+  &:nth-child(10) {
+    &::after {
+      background-image: url("../img/serives-10.svg");
+    }
+  }
+
+  &:nth-child(11) {
+    &::after {
+      background-image: url("../img/serives-11.svg");
+    }
+  }
+
+  &:nth-child(12) {
+    &::after {
+      background-image: url("../img/serives-12.svg");
+    }
+  }
+}
+
+.services__item-title {
+  padding: 0;
+  margin: 0;
+  font-family: $font-dec;
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding-left: 5px;
+  padding-bottom: 9px;
+}
+
+.services__item-text {
+  padding: 0;
+  margin: 0;
+  font-family: $main-font;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  padding-left: 5px;
+}

@@ -1,0 +1,14 @@
+$font-dec: "Playfair Display", "Arial", sans-serif;
+$main-font: "Arial", sans-serif;
+
+
+$white: #ffffff;
+$black: #000000;
+
+$color1: #860708;
+
+@mixin listReset {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}

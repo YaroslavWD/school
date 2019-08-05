@@ -1,0 +1,81 @@
+.wrapper {
+  width: 320px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-left: auto;
+  margin-right: auto;
+
+  &--no-mobile {
+    width: 100%;
+    padding: 0;
+  }
+
+  &--nopadding {
+    padding-right: 0;
+  }
+}
+
+@media (min-width: $big-mobile) {
+  .wrapper {
+    width: $big-mobile;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    &--no-mobile {
+      width: 100%;
+      padding: 0;
+    }
+
+    &--nopadding {
+      padding-right: 0;
+    }
+  }
+}
+
+@media (min-width: $large-mobile) {
+  .wrapper {
+    width: $large-mobile;
+  }
+}
+
+@media (min-width: $fablet) {
+  .wrapper {
+    width: $fablet;
+
+    &--no-mobile {
+      width: $fablet;
+      padding: 0;
+    }
+  }
+}
+
+
+@media (min-width: $tablet) {
+  .wrapper {
+    width: $tablet;
+
+    &--no-mobile {
+      width: $tablet;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+}
+
+@media (min-width: $laptop) {
+  .wrapper {
+    width: $laptop;
+    position: relative;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .wrapper {
+    width: $desktop;
+    position: relative;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}

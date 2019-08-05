@@ -1,0 +1,101 @@
+.header {
+  padding-top: 10px;
+}
+
+.header__top {
+  padding-left: 20px;
+  padding-bottom: 12px;
+}
+
+.header__logo {
+  padding-top: 5px;
+}
+
+.header .header__right {
+  padding-right: 0;
+}
+
+.header__title-block {
+  padding-left: 20px;
+
+  h1 {
+    margin: 0;
+    font-family: $font-dec;
+    font-size: 26px;
+    line-height: 1.2;
+    font-weight: 400;
+    color: $black;
+    margin-bottom: 3px;
+  }
+
+  p {
+    margin: 0;
+    font-family: $main-font;
+    font-size: 14px;
+    line-height: 1.2;
+    font-weight: 400;
+  }
+}
+
+.header__address {
+  font-family: $main-font;
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: rgba($color: #000000, $alpha: 0.5);
+  padding-top: 10px;
+  position: relative;
+  padding-left: 27px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-image: url("../img/map-marker-point.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    left: -10px;
+    top: 9px;
+  }
+}
+
+
+.header__contacts {
+  text-align: right;
+  padding-top: 5px;
+}
+
+.header__phone {
+  font-family: $main-font;
+  font-size: 20px;
+  font-weight: 600;
+  color: $black;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-image: url("../img/header__phone.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    left: 66px;
+    top: 9px;
+  }
+}
+
+.header__email {
+  font-family: $main-font;
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: $color1;;
+  text-decoration: underline;
+}
+
+
+@supports
+  (display: grid) {
+
+  }
